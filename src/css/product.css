@@ -1,0 +1,14 @@
+.my-sidebar{
+    text-align: right;
+    width: 300px;
+}
+
+a{
+    width: 80px;
+    text-align: center;
+}
+
+.prod-items{
+    color: rgb(31, 31, 31);
+}
+
