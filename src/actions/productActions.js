@@ -6,20 +6,34 @@ function getAllProductsSuccess(products) {
 }
 
 function addProductSuccess(product) {
-  // debugger;
   return {
     type: types.ADD_PRODUCT,
     product,
   };
 }
 
-function deleteProductSuccess(id){
-  // debugger;
-  console.log(id)
-    return {
-        type : types.DELETE_PRODUCT,
-        id
-    }
+function deleteProductSuccess(id) {
+  console.log(id);
+  return {
+    type: types.DELETE_PRODUCT,
+    id,
+  };
+}
+
+function updateProductSuccess(product) {
+  debugger;
+  return {
+    type: types.UPDATE_PRODUCT,
+    product
+  }
+}
+
+function incViewCountSuccess(product){
+  debugger;
+  return {
+    type : types.INC_VIEW,
+    product
+  }
 }
 
 export function getAllProducts() {
@@ -32,7 +46,6 @@ export function getAllProducts() {
 }
 
 export function addProduct(product) {
-  // debugger;
   return function (dispatch) {
     return productsApi
       .addProduct(product)
@@ -42,24 +55,29 @@ export function addProduct(product) {
 }
 
 export function deleteProduct(id) {
-  debugger;
   return function (dispatch) {
-    debugger;
     return productsApi
       .deleteProduct(id)
-      .then((id) => dispatch(deleteProductSuccess(id)))
+      .then(() => dispatch(deleteProductSuccess(id)))
       .catch((err) => console.log(err));
   };
 }
 
-// export function deleteProduct(id){ 
-//   // debugger;   
-//      return function (dispatch){    
-//        console.log("Test");
-//       //  debugger;   
-//         return productsApi
-//         .deleteProduct(id)
-//         .then((id) => { debugger; dispatch(deleteProductSuccess(id))})
-//         .catch((err) => {debugger; console.log(err)});
-//     }
-// }
+export function updateProduct(product, id) {
+  debugger;
+  return function (dispatch) {
+    return productsApi
+      .updateProduct(product, id)
+      .then((product, id) => dispatch(updateProductSuccess(product)))
+      .catch((err) => console.log(err));
+  };
+}
+
+export function incViewCount(viewCount, id) {
+  debugger;
+  return function (dispatch){
+    return productsApi.incViewCount(viewCount, id)
+    .then((product) => dispatch(incViewCountSuccess(product)))
+    .catch(err => console.log(err))
+  }
+}

@@ -1,7 +1,7 @@
 import * as types from '../actions/actionTypes';
 
 export default function productsReducer (state = [], action) {
-    debugger;
+    // debugger;
     switch (action.type) {
         case types.GET_PRODUCTS:
             return action.products;
@@ -13,10 +13,22 @@ export default function productsReducer (state = [], action) {
             ];
         case types.DELETE_PRODUCT:
             // debugger;
-            let newState =  state.filter(product => product.id != action.id);
-            return newState;
+            let newStateDelete =  state.filter(product => product.id != action.id);
+            return newStateDelete;
             
-               
+        case types.UPDATE_PRODUCT:
+            let newStateWithoutProductUpdate = state.filter(item => item.id !== action.product.id);
+            return [
+                action.product,  ...newStateWithoutProductUpdate
+            ]
+
+         case types.INC_VIEW:
+             debugger;
+             let newStateWithoutProductInc = state.filter(item => item.id !== action.product.id);
+            return [
+                action.product,  ...newStateWithoutProductInc
+            ]
+        
         default:
             return state;
     }

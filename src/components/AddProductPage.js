@@ -13,8 +13,8 @@ class AddProductPage extends Component {
 
     render() {
         return (
-            <div>
-                <AddProductForm addProductProp = {this.addProduct}/>
+            <div className = "container">
+                <AddProductForm {...this.props} addProductProp = {this.addProduct}/>
             </div>
         )
     }

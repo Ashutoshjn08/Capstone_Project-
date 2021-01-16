@@ -5,18 +5,25 @@ import {bindActionCreators} from 'redux';
 import * as action from '../actions/productActions'
 
 class AllProductsPage extends Component {
+
+    incViewCount = (id) =>{
+        const product = this.props.products.filter(product => product.id == id);
+        this.props.actions.incViewCount(product[0].view, id);
+    }
+
+    deleteProducthandle = (id) => {
+        this.props.actions.deleteProduct(id);
+    }
     render() {
-        // console.log("AllProductPage Props", this.props)
         return (
             <div>
-                <ProductList {...this.props}/>
+                <ProductList deleteProductProp = {this.deleteProducthandle} incViewCountProp = {this.incViewCount} {...this.props}/>
             </div>
         )
     }
 }
 
 function mapStateToProps(state, ownProps) {
-    // console.log("mapStatetoprops productss", state)
     return {products : state.products}
 }
 

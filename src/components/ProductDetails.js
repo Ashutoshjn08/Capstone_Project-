@@ -3,10 +3,10 @@ import React, { Component } from "react";
 export default class ProductDetails extends Component {
   constructor(props) {
     super(props);
+    debugger;
     this.smallStr = this.props.location.state;
   }
   render() {
-    console.log(this.props);
     return (
       <div className="home-container">
         <div className="card">

@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 export default class Home extends Component {
   render() {
     return (
+      <div className = "ui container">
       <div className="home-container">
         <div className="card text-center">
           <div className="card-header card-head"><h3>Product Inventory</h3></div>
@@ -17,6 +18,7 @@ export default class Home extends Component {
             </a>
           </div>
         </div>
+      </div>
       </div>
     );
   }

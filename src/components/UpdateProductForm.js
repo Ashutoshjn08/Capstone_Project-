@@ -1,64 +1,44 @@
 import { withFormik, Field, Form, Formik } from "formik";
 import * as Yup from "yup";
 
-const AddProductForm = (props) => {
-  const { errors, touched } = props;
+const UpdateProductForm = (props) => {
+  const { errors, touched} = props;
 
-  const addProductSubmit = (e) => {
+  const updateProductSubmit = () => {
     const product = {};
-    e.stopPropagation();
-    product.title = props.values.title;
+    // product.title = props.values.title;
     product.price = props.values.price;
-    product.description = props.values.description;
-    product.manufacturer = props.values.manufacturer;
+    // product.description = props.values.description;
+    // product.manufacturer = props.values.manufacturer;
     product.quantity = props.values.quantity;
     product.category = props.values.category;
     product.image = props.values.image;
-    product.view = 0;
-    if (
-      !product.title ||
-      !product.price ||
-      !product.description ||
-      !product.manufacturer ||
-      !product.quantity ||
-      !product.category ||
-      !product.image
-    ) {
-      var flag = window.confirm("Do you want to leave this page?");
-      if (flag) {
-        props.history.push("/products");
-      }
-    } else {
-      props.addProductProp(product);
-    }
-  };
+    props.updateProductProp(product);
+  }
 
   return (
     <Form>
-      <h4>Fill the form:</h4>
+      <h4>Fill the form to update the product's details:</h4>
       <br />
-      <span className="field-title">Title: </span>
-      <Field type="text" name="title" placeholder="Enter Title" />
+     
+      {/* <span className="field-title">Title: </span>
+      <Field type="text" name="title"  placeholder = {props.title}/>
       {touched.title && errors.title && (
         <span className="form-err">{errors.title}</span>
       )}
       <br />
-      <br />
+      <br /> */}
 
       <span className="field-title">Price: </span>
-      <Field type="number" name="price" placeholder="Enter Price" />
+      <Field type="number" name="price" placeholder = {props.price}  />
       {touched.price && errors.price && (
         <span className="form-err">{errors.price}</span>
       )}
       <br />
       <br />
 
-      <span className="field-title">Description: </span>
-      <Field
-        type="textarea"
-        name="description"
-        placeholder="Enter Description"
-      />
+      {/* <span className="field-title">Description: </span>
+      <Field type="textarea" name="description" placeholder = {props.description}  />
       {touched.description && errors.description && (
         <span className="form-err">{errors.description}</span>
       )}
@@ -66,15 +46,15 @@ const AddProductForm = (props) => {
       <br />
 
       <span className="field-title">Brand: </span>
-      <Field type="text" name="manufacturer" placeholder="Enter Brand Name" />
+      <Field type="text" name="manufacturer" placeholder = {props.manufacturer}  />
       {touched.manufacturer && errors.manufacturer && (
         <span className="form-err">{errors.manufacturer}</span>
       )}
       <br />
-      <br />
+      <br /> */}
 
       <span className="field-title">Quantity: </span>
-      <Field type="number" name="quantity" placeholder="Enter Quantity" />
+      <Field type="number" name="quantity" placeholder = {props.quantity}  />
       {touched.quantity && errors.quantity && (
         <span className="form-err">{errors.quantity}</span>
       )}
@@ -82,7 +62,7 @@ const AddProductForm = (props) => {
       <br />
 
       <span className="field-title">Category: </span>
-      <Field type="text" name="category" placeholder="Enter Category" />
+      <Field type="text" name="category" placeholder = {props.category} />
       {touched.category && errors.category && (
         <span className="form-err">{errors.category}</span>
       )}
@@ -90,19 +70,13 @@ const AddProductForm = (props) => {
       <br />
 
       <span className="field-title">Image Link: </span>
-      <Field type="url" name="image" placeholder="Enter url" />
+      <Field type="url" name="image" placeholder = {props.image}   />
       {touched.image && errors.image && (
         <span className="form-err">{errors.image}</span>
       )}
       <br />
       <br />
-      <button
-        onClick={addProductSubmit}
-        className="btn-add-product-sub"
-        type="submit"
-      >
-        Submit Form
-      </button>
+      <button onClick = {updateProductSubmit} className = "btn-add-product-sub" type="submit">Submit Form</button>
     </Form>
   );
 };
@@ -110,28 +84,27 @@ const AddProductForm = (props) => {
 const formikForm = withFormik({
   mapPropsToValues({ ttl, prc, desc, brand, qnty, cat, img }) {
     return {
-      title: ttl || "",
-      price: prc || "",
-      description: desc || "",
-      manufacturer: brand || "",
-      quantity: qnty || "",
-      category: cat || "",
-      image: img || "",
+        // title: ttl || "",
+        price: prc || "",
+        // description: desc || "",
+        // manufacturer: brand || "",
+        quantity: qnty || "",
+        category: cat || "",
+        image: img || "",
     };
   },
   validationSchema: Yup.object().shape({
-    title: Yup.string()
-      .min(3, "At least 3 characters are required")
-      .required("Title is required"),
+    // title: Yup.string().min(3, "At least 3 characters are required")
+    // .required("Title is required"),
     price: Yup.number()
       .positive("Enter Only Numbers")
       .required("Price is required"),
-    description: Yup.string()
-      .min(20, "At least 20 characters are required")
-      .required("Description is required"),
-    manufacturer: Yup.string()
-      .min(3, "At least 3 characters are required")
-      .required("Title is required"),
+    // description: Yup.string()
+    //   .min(20, "At least 20 characters are required")
+    //   .required("Description is required"),
+    // manufacturer: Yup.string()
+    //   .min(3, "At least 3 characters are required")
+    //   .required("Title is required"),
     quantity: Yup.number()
       .positive("Enter Only Numbers")
       .required("Quantity is required"),
@@ -140,6 +113,6 @@ const formikForm = withFormik({
       .required("Category is required"),
     image: Yup.string().url("Please enter the valid url link"),
   }),
-})(AddProductForm);
+})(UpdateProductForm);
 
 export default formikForm;
