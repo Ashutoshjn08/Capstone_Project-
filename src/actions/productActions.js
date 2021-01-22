@@ -21,19 +21,17 @@ function deleteProductSuccess(id) {
 }
 
 function updateProductSuccess(product) {
-  debugger;
   return {
     type: types.UPDATE_PRODUCT,
-    product
-  }
+    product,
+  };
 }
 
-function incViewCountSuccess(product){
-  debugger;
+function incViewCountSuccess(product) {
   return {
-    type : types.INC_VIEW,
-    product
-  }
+    type: types.INC_VIEW,
+    product,
+  };
 }
 
 export function getAllProducts() {
@@ -64,7 +62,6 @@ export function deleteProduct(id) {
 }
 
 export function updateProduct(product, id) {
-  debugger;
   return function (dispatch) {
     return productsApi
       .updateProduct(product, id)
@@ -74,10 +71,14 @@ export function updateProduct(product, id) {
 }
 
 export function incViewCount(viewCount, id) {
-  debugger;
-  return function (dispatch){
-    return productsApi.incViewCount(viewCount, id)
-    .then((product) => dispatch(incViewCountSuccess(product)))
-    .catch(err => console.log(err))
-  }
+  return function (dispatch) {
+    return productsApi
+      .incViewCount(viewCount, id)
+      .then((product) => dispatch(incViewCountSuccess(product)))
+      .catch((err) => console.log(err));
+  };
 }
+
+
+
+

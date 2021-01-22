@@ -11,11 +11,29 @@ class TopProductPage extends Component {
   }
 
   render() {
-    return (
-      <div className="bar-details-div">
-        <BarChart {...this.props} />
+    if(this.props.products.length>10){
+      return (
+        <div className="bar-details-div">
+          <BarChart {...this.props} />
+        </div>
+      );
+    }else{
+      return(
+        <div style={{ backgroundColor:"rgb(47, 48, 48)", }} className= "less-top-products">
+        <h2>There are not more than 10 items to show the Top Products</h2>
+        <br />
+        <br />
+        <a
+          href = "/products"
+          style={{marginLeft: "5px", textAlign: "center", width: "150px" }}
+          className="btn btn-primary"
+        >
+          <span>Go back</span>
+        </a>
       </div>
-    );
+      )
+    }
+
   }
 }
 

@@ -5,6 +5,14 @@ const UpdateProductForm = (props) => {
   const { errors, touched} = props;
 
   const updateProductSubmit = () => {
+    
+    
+    if(!props.values.price || !props.values.quantity || !props.values.category || !props.values.image){
+      let flag = window.confirm("Are you sure to leave this page");
+        if(flag){
+            props.history.push('/products')
+        }
+    } else{
     const product = {};
     // product.title = props.values.title;
     product.price = props.values.price;
@@ -13,7 +21,10 @@ const UpdateProductForm = (props) => {
     product.quantity = props.values.quantity;
     product.category = props.values.category;
     product.image = props.values.image;
-    props.updateProductProp(product);
+      props.updateProductProp(product);
+      props.history.push('/products')
+    }
+    
   }
 
   return (

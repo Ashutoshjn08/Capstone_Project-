@@ -8,21 +8,13 @@ class UpdateProductPage extends Component {
 
     updateProduct = (product) => {
         let id = this.props.location.state.id;
-        let flag = window.confirm("Are you sure to leave this page");
-        if(!product.price || !product.quantity || !product.category || !product.image){
-            if(flag){
-                this.props.history.push('/products')
-            }
-        } else{
-            this.props.actions.updateProduct(product, id);
-        }
-        
+        this.props.actions.updateProduct(product, id);       
     }
 
     render() {
         return (
-            <div>
-                <UpdateProductForm updateProductProp = {this.updateProduct} {...this.props.location.state}/>
+            <div className="ui container">
+                <UpdateProductForm updateProductProp = {this.updateProduct} {...this.props.location.state}{...this.props}/>
             </div>
         )
     }

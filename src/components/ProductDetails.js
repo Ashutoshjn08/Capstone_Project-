@@ -1,12 +1,22 @@
 import React, { Component } from "react";
 
+// let this.localStorageStr = JSON.parse(localStorage.getItem("products"));
+// let this.localStorageObj = {};
+
 export default class ProductDetails extends Component {
   constructor(props) {
     super(props);
-    debugger;
-    this.smallStr = this.props.location.state;
+    this.localStorageObj = this.props.location.state;
+    this.localStorageStr  = JSON.parse(localStorage.getItem("products"));
   }
+
   render() {
+    if (!this.localStorageObj) {
+      let arr = this.localStorageStr.filter(
+        (product) => product.id == this.props.match.params.id
+      );
+      this.localStorageObj = arr[0];
+    }
     return (
       <div className="home-container">
         <div className="card">
@@ -19,24 +29,24 @@ export default class ProductDetails extends Component {
                   margin: "auto",
                   padding: "20px",
                 }}
-                src={this.smallStr.image}
+                src={this.localStorageObj.image}
                 alt="Card image cap"
               />
             </div>
 
             <div className="card-body pro-details">
-              <h4 className="card-title">{this.smallStr.title}</h4>
-              <p className="card-text">{this.smallStr.description}</p>
+              <h4 className="card-title">{this.localStorageObj.title}</h4>
+              <p className="card-text">{this.localStorageObj.description}</p>
               <p>
-                <b>Price: </b>Rs. {this.smallStr.price}
+                <b>Price: </b>Rs. {this.localStorageObj.price}
               </p>
               <p>
                 <b>Brand: </b>
-                {this.smallStr.manufacturer}
+                {this.localStorageObj.manufacturer}
               </p>
               <p>
                 <b>Catagory: </b>
-                {this.smallStr.category}
+                {this.localStorageObj.category}
               </p>
               <a
                 href="/products"
