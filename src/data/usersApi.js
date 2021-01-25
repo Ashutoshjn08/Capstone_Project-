@@ -9,7 +9,6 @@ export default class usersApi {
   };
 
   static addUser = (user) => {
-    debugger;
     return axios
       .post("http://localhost:3001/users", user)
       .then((res) => {

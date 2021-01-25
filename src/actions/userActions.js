@@ -18,7 +18,6 @@ export function getAllUsers() {
 }
 
 function addUserSuccess (user){
-  debugger;
   return{
     type : types.ADD_USER,
     user
@@ -26,7 +25,6 @@ function addUserSuccess (user){
 }
 export function addUser(user) {
   return function (dispatch) {
-    debugger;
     return usersApi
       .addUser(user)
       .then(() => dispatch(addUserSuccess(user)))

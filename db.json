@@ -3,24 +3,24 @@
     {
       "id": 3,
       "title": "Mens Cotton Jacket",
-      "price": 5500,
+      "price": 40000,
       "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
       "manufacturer": "Roaster",
-      "quantity": 7,
-      "category": "Men Clothing",
+      "quantity": 34343,
+      "category": "Daily Items",
       "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
-      "view": 269
+      "view": 276
     },
     {
       "id": 4,
       "title": "Mens Casual Slim Fit",
-      "price": 1500,
+      "price": 9700,
       "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
       "manufacturer": "Roaster",
-      "quantity": 3,
-      "category": "Men Clothing",
-      "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
-      "view": 964
+      "quantity": 34343,
+      "category": "Foods",
+      "image": "https://homepages.cae.wisc.edu/~ece533/images/lena.png",
+      "view": 969
     },
     {
       "id": 5,
@@ -31,7 +31,7 @@
       "quantity": 2,
       "category": "Jewelery",
       "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
-      "view": 654
+      "view": 655
     },
     {
       "id": 6,
@@ -42,7 +42,7 @@
       "quantity": 9,
       "category": "Jewelery",
       "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
-      "view": 545
+      "view": 546
     },
     {
       "id": 7,
@@ -208,6 +208,259 @@
       "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
       "view": 0,
       "id": 21
+    },
+    {
+      "title": "Bottol",
+      "price": 40000,
+      "description": "Steel Bottol with a cover.",
+      "manufacturer": "Milton",
+      "quantity": 34343,
+      "category": "Daily Items",
+      "image": "https://homepages.cae.wisc.edu/~ece533/images/lena.png",
+      "view": 0,
+      "id": 22
+    },
+    {
+      "title": "Bottol",
+      "price": 40000,
+      "description": "Steel Bottol with a cover.",
+      "manufacturer": "Milton",
+      "quantity": 34343,
+      "category": "Daily Items",
+      "image": "https://homepages.cae.wisc.edu/~ece533/images/lena.png",
+      "view": 0,
+      "id": 23
+    },
+    {
+      "title": "Which Cartoons you like most?",
+      "price": 40000,
+      "description": "Steel Bottol with a cover.",
+      "manufacturer": "Fruity",
+      "quantity": 34343,
+      "category": "Mens items",
+      "image": "https://homepages.cae.wisc.edu/~ece533/images/watch.png",
+      "view": 0,
+      "id": 24
+    },
+    {
+      "title": "Tkdjfk",
+      "price": 9700,
+      "description": "Steel Bottol with a cover.",
+      "manufacturer": "Milton",
+      "quantity": 34343,
+      "category": "Mens items",
+      "image": "https://homepages.cae.wisc.edu/~ece533/images/lena.png",
+      "view": 0,
+      "id": 25
+    },
+    {
+      "title": "Hut",
+      "price": 9700,
+      "description": "Steel Bottol with a cover.",
+      "manufacturer": "Fruity",
+      "quantity": 1,
+      "category": "Mens items",
+      "image": "https://homepages.cae.wisc.edu/~ece533/images/watch.png",
+      "view": 0,
+      "id": 26
+    },
+    {
+      "title": "Bottol",
+      "price": 9700,
+      "description": "Nice hat with all decorations.",
+      "manufacturer": "Milton",
+      "quantity": 67,
+      "category": "Women items",
+      "image": "https://homepages.cae.wisc.edu/~ece533/images/lena.png",
+      "view": 0,
+      "id": 27
+    },
+    {
+      "title": "Rope",
+      "price": 56,
+      "description": "Steel Bottol with a cover.",
+      "manufacturer": "Titan",
+      "quantity": 34343,
+      "category": "Music",
+      "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+      "view": 0,
+      "id": 28
+    },
+    {
+      "title": "Bottol",
+      "price": 40000,
+      "description": "Steel Bottol with a cover.",
+      "manufacturer": "Fruity",
+      "quantity": 1,
+      "category": "Men Items",
+      "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+      "view": 0,
+      "id": 29
+    },
+    {
+      "title": "Bottol",
+      "price": 40000,
+      "description": "Steel Bottol with a cover.",
+      "manufacturer": "Milton",
+      "quantity": 67,
+      "category": "Women items",
+      "image": "https://homepages.cae.wisc.edu/~ece533/images/lena.png",
+      "view": 0,
+      "id": 30
+    },
+    {
+      "title": "Which Cartoons you like most?",
+      "price": 40000,
+      "description": "Steel Bottol with a cover.",
+      "manufacturer": "Titan",
+      "quantity": 34343,
+      "category": "Music",
+      "image": "https://homepages.cae.wisc.edu/~ece533/images/watch.png",
+      "view": 0,
+      "id": 31
+    },
+    {
+      "title": "Which Cartoons you like most?",
+      "price": 3434,
+      "description": "Nice hat with all decorations.",
+      "manufacturer": "Titan",
+      "quantity": 1,
+      "category": "Men Items",
+      "image": "https://homepages.cae.wisc.edu/~ece533/images/watch.png",
+      "view": 0,
+      "id": 32
+    },
+    {
+      "title": "Which Cartoons you like most?",
+      "price": 3434,
+      "description": "Nice hat with all decorations.",
+      "manufacturer": "Titan",
+      "quantity": 1,
+      "category": "Music",
+      "image": "https://homepages.cae.wisc.edu/~ece533/images/watch.png",
+      "view": 0,
+      "id": 33
+    },
+    {
+      "title": "Which Cartoons you like most?",
+      "price": 40000,
+      "description": "Nice hat with all decorations.",
+      "manufacturer": "Titan",
+      "quantity": 1,
+      "category": "Men Items",
+      "image": "https://homepages.cae.wisc.edu/~ece533/images/watch.png",
+      "view": 0,
+      "id": 34
+    },
+    {
+      "title": "Which Cartoons you like most?",
+      "price": 40000,
+      "description": "Fruits are good for health",
+      "manufacturer": "Titan",
+      "quantity": 1,
+      "category": "Music",
+      "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+      "view": 0,
+      "id": 35
+    },
+    {
+      "title": "aaaa",
+      "price": 40000,
+      "description": "Nice hat with all decorations.",
+      "manufacturer": "Titan",
+      "quantity": 34343,
+      "category": "Men Items",
+      "image": "https://homepages.cae.wisc.edu/~ece533/images/lena.png",
+      "view": 0,
+      "id": 36
+    },
+    {
+      "title": "Tkdjfk",
+      "price": 40000,
+      "description": "Nice hat with all decorations.",
+      "manufacturer": "Titan",
+      "quantity": 34342,
+      "category": "Men Items",
+      "image": "https://homepages.cae.wisc.edu/~ece533/images/lena.png",
+      "view": 0,
+      "id": 37
+    },
+    {
+      "title": "Bottoljdkfj",
+      "price": 40000,
+      "description": "Steel Bottol with a cover.",
+      "manufacturer": "Titan",
+      "quantity": 1,
+      "category": "Mens items",
+      "image": "https://homepages.cae.wisc.edu/~ece533/images/lena.png",
+      "view": 0,
+      "id": 38
+    },
+    {
+      "title": "Which Cartoons you like most?",
+      "price": 3434,
+      "description": "Fruits are good for health",
+      "manufacturer": "Biba",
+      "quantity": 3,
+      "category": "Women items",
+      "image": "https://homepages.cae.wisc.edu/~ece533/images/watch.png",
+      "view": 0,
+      "id": 39
+    },
+    {
+      "title": "Tkdjfk",
+      "price": 3434,
+      "description": "Nice hat with all decorations.",
+      "manufacturer": "Fruity",
+      "quantity": 1,
+      "category": "Women items",
+      "image": "https://homepages.cae.wisc.edu/~ece533/images/watch.png",
+      "view": 0,
+      "id": 40
+    },
+    {
+      "title": "Which Cartoons you like most?",
+      "price": 40000,
+      "description": "Fruits are good for health",
+      "manufacturer": "Milton",
+      "quantity": 34343,
+      "category": "Women items",
+      "image": "https://homepages.cae.wisc.edu/~ece533/images/watch.png",
+      "view": 0,
+      "id": 41
+    },
+    {
+      "title": "Laptop",
+      "price": 55000,
+      "description": "Hp Mac Pro Laptop core i5",
+      "manufacturer": "HP - Laptop",
+      "quantity": 10,
+      "category": "Electronic",
+      "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+      "view": 1,
+      "id": 42
+    },
+    {
+      "title": "Laptop Dell",
+      "price": 40000,
+      "description": "Fruits are good for health",
+      "manufacturer": "Titan",
+      "quantity": 1,
+      "category": "Daily Items",
+      "image": "https://homepages.cae.wisc.edu/~ece533/images/lena.png",
+      "view": 0,
+      "id": 43
+    },
+    {
+      "title": "Which Cartoons you like most?",
+      "price": 40000,
+      "description": "Nice hat with all decorations.",
+      "manufacturer": "Titan",
+      "quantity": 34343,
+      "category": "Women items",
+      "image": "https://homepages.cae.wisc.edu/~ece533/images/watch.png",
+      "view": 0,
+      "id": 44
     }
   ],
   "users": [

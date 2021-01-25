@@ -30,13 +30,13 @@ function SignInForm(props) {
           <Form>
             <Field type="text" name="id" placeholder="Email ID" /><br/>
             {touched.id && errors.id && (
-              <span className="form-err">{errors.id}</span>
+              <span className="form-err-login">{errors.id}</span>
             )}
             <br />
 
             <Field type="password" name="password" placeholder="Password" /><br/>
             {touched.password && errors.password && (
-              <span className="form-err">{errors.password}</span>
+              <span className="form-err-login">{errors.password}</span>
             )}
             <br />
             <span className={register ? "display-register" : "display-none"}>

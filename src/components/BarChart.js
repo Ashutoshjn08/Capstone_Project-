@@ -125,7 +125,8 @@ function BarChart(props) {
                     fontSize: "20px",
                     cursor: "pointer",
                   }}
-                  href={`/product/${ele.id}`}
+                  onClick = {()=> props.history.push(`/product/${ele.id}`)}
+                  // href={`/product/${ele.id}`}
                 >
                   <b>{ele.name}</b>
                 </a>

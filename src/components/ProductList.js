@@ -349,7 +349,7 @@ export default class ProductList extends Component {
         {/* *********Buttons***************** */}
         <div className="container">
           <div className="div-btn-add">
-            <div>
+            <div className= "div-customize">
               <a
                 onClick={() => this.setState({ isModalOpen: true })}
                 style={{ width: "auto" }}
@@ -358,7 +358,7 @@ export default class ProductList extends Component {
                 <span>Customize</span>
               </a>
             </div>
-            <div>
+            <div className = "div-add-delete-btn">
               <a
                 onClick={this.checkLogin}
                 style={{ marginLeft: "5px" }}

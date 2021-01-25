@@ -7,7 +7,6 @@ import SignUpForm from './SignUpForm';
 class SignUpPage extends Component {
 
     submitForm = (user) => {
-        debugger;
         this.props.actions.addUser(user);
     }
 

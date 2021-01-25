@@ -1,5 +1,5 @@
 //json-server -p 3001 --watch db.json
-import React, { Component, useEffect, useState } from "react";
+import React, { Component, useEffect, useState, Suspense, lazy } from "react";
 import AllProductsPage from "./components/AllProductsPage";
 import Home from "./components/Home";
 import { Provider } from "react-redux";
@@ -18,9 +18,11 @@ import logo from "./logo.png";
 import ProductDetails from "./components/ProductDetails";
 import AddProductPage from "./components/AddProductPage";
 import UpdageProductPage from "./components/UpdageProductPage";
-import TopProductPage from "./components/TopProductPage";
 import SignInPage from "./components/SignInPage";
 import SignUpPage from "./components/SignUpPage";
+import Loading from "./components/Loading";
+// import TopProductPage from "./components/TopProductPage";
+const TopProductPage = lazy(() => import("./components/TopProductPage"));
 
 store.dispatch(getAllProducts());
 store.dispatch(getAllUsers());
@@ -31,7 +33,7 @@ function Links(props) {
   let d = new Date();
   const [liLogin, setLilogin] = useState(true);
   const [liLogout, setlilogout] = useState(true);
-  const [int, setInt] = useState(d.getDate()+""+d.getTime());
+  const [int, setInt] = useState(d.getDate() + "" + d.getTime());
 
   const onChangeHandleSearch = (val) => {
     props.onChangeHandleProp(val);
@@ -50,7 +52,7 @@ function Links(props) {
 
   const removeLogin = () => {
     localStorage.removeItem("login");
-    setInt(d.getDate()+""+d.getTime());
+    setInt(d.getDate() + "" + d.getTime());
   };
 
   return (
@@ -110,7 +112,10 @@ function Links(props) {
                 aria-label="Search"
               />
             </li>
-            <li onClick={removeLogin} className={liLogout ? "li-signin-up" : `li-signin-up ${hide}`}>
+            <li
+              onClick={removeLogin}
+              className={liLogout ? "li-signin-up" : `li-signin-up ${hide}`}
+            >
               <a href="#">
                 <div className="glyphicon glyphicon-log-in log-out">
                   <FaSignOutAlt />
@@ -145,7 +150,7 @@ export default class App extends Component {
         <Router>
           <Links
             onChangeHandleProp={this.onChangeHandle}
-            loggedInStatus={new Date().getDate() +""+ new Date().getTime()}
+            loggedInStatus={new Date().getDate() + "" + new Date().getTime()}
             removeLogin={this.removeLogin}
           />
           <Switch>
@@ -174,9 +179,11 @@ export default class App extends Component {
                   path="/topproducts"
                   render={(props) => {
                     return (
-                      <div id="top-product">
-                        <TopProductPage {...props} />
-                      </div>
+                      <Suspense fallback={<Loading />}>
+                        <div id="top-product">
+                          <TopProductPage {...props} />
+                        </div>
+                      </Suspense>
                     );
                   }}
                 />

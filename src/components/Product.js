@@ -56,14 +56,13 @@ export default class Product extends Component {
     this.props.incViewCountProp(id);
   }
 
-  onClickHandle = () => {
+  onClickHandle = (e) => {
     let login = localStorage.getItem('login')
     if(login){
            this.ViewProduct(this.props.id)
     }else{
       let flag = window.confirm('Please login to view the product');
       if(flag){
-        debugger;
         this.props.history.push('/signin')
       }else{
         this.props.history.push('/products')
@@ -94,7 +93,6 @@ export default class Product extends Component {
               toJustRender = {this.props.uncheck}
             />
             <a
-              href={this.detailLink}
               style={{ cursor: "pointer" }}
               className="prod-items"
               onClick={() => this.onClickHandle()}
@@ -114,7 +112,7 @@ export default class Product extends Component {
           <div className={this.props.brCheck ? "col " : "hide-item-li"}>
             <span className="prod-items">{this.props.manufacturer}</span>
           </div>
-          <div className="col">
+          <div className="col col-update">
             <a
               id={this.props.id}
               onClick={(event) => {

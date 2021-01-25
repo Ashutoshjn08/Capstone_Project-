@@ -15,7 +15,6 @@ export default class ProductList extends Component {
   //Common function after checking value from search bar
 
   checkedInputPushHandler = (id, title) => {
-    // debugger;
     this.setState(
       {
         checkedInputs: [...this.state.checkedInputs, id],

@@ -62,6 +62,7 @@ export function deleteProduct(id) {
 }
 
 export function updateProduct(product, id) {
+  debugger;
   return function (dispatch) {
     return productsApi
       .updateProduct(product, id)

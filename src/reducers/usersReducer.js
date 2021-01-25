@@ -6,7 +6,6 @@ function usersReducer(state = [], action) {
       return action.users;
 
     case types.ADD_USER:
-      debugger;
       return [...state, action.user];
     default:
       return state;

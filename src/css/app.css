@@ -40,9 +40,11 @@ a.active {
   font-weight: bold;
 }
 
+.form-err, .form-err-login {
+  color: red;
+}
 .form-err {
   margin-left: 10px;
-  color: red;
   padding-left: 75px;
 }
 
@@ -214,18 +216,73 @@ button.sign-up-btn {
 }
 
 .modal-div {
-  position:absolute;
+  position: absolute;
 }
 
-.cancel-icon{
-  position: absolute;;
+.cancel-icon {
+  position: absolute;
   right: 5px;
   top: 0px;
-  
 }
 
-
-
-.custum-fields{
+.custum-fields {
   display: inline-block;
+}
+
+.loading-div {
+  padding-top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .bottom-buffer,
+  .bar-div {
+    display: none;
+  }
+  .bar-details-div {
+    padding: 20px 0;
+  }
+
+  .pro-details-main,
+  div .img-shadow,
+  .pro-details {
+    width: 100%;
+  }
+  li.li-signin-up {
+    padding: 10px 0 5px;
+  }
+  span.signup-input.sign-up-span {
+    padding: 0;
+    width: auto;
+    display: block;
+    padding-bottom: 5px;
+  }
+  .card-div-signup {
+    width: 100%;
+    text-align: left;
+  }
+  .col {
+    display: none;
+  }
+  .col-update {
+    width: 30%;
+    display: inline-block;
+    padding: 5px 0;
+  }
+  .col-sm-4 {
+    display: inline-block;
+    width: 70%;
+  }
+  .div-customize {
+    display: none;
+  }
+  .div-btn-add {
+    justify-content: flex-end;
+  }
+  .form-err {
+    margin: 0;
+    padding: 0;
+  }
 }

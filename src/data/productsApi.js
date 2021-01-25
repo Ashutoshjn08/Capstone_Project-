@@ -40,7 +40,7 @@ export default class productsApi {
     return axios
       .patch("http://localhost:3001/products/" + id, { view: viewCount + 1 })
       .then((res) => res.data)
-      .category((err) => console.log(err));
+      .catch((err) => console.log(err));
   };
 
 

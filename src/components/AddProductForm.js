@@ -4,6 +4,9 @@ import * as Yup from "yup";
 const AddProductForm = (props) => {
   const { errors, touched } = props;
 
+  const isTransition = () => {
+    props.tran();
+  };
   const addProductSubmit = (e) => {
     const product = {};
     e.stopPropagation();
@@ -24,7 +27,9 @@ const AddProductForm = (props) => {
       !product.category ||
       !product.image
     ) {
-      var flag = window.confirm("Do you want to leave this page?");
+      var flag = window.confirm(
+        "Required data is not provided! Do you still want to leave this page?"
+      );
       if (flag) {
         props.history.push("/products");
       }
@@ -38,7 +43,14 @@ const AddProductForm = (props) => {
       <h4>Fill the form:</h4>
       <br />
       <span className="field-title">Title: </span>
-      <Field type="text" name="title" placeholder="Enter Title" />
+      <Field
+        onInput={() => {
+          isTransition();
+        }}
+        type="text"
+        name="title"
+        placeholder="Enter Title"
+      />
       {touched.title && errors.title && (
         <span className="form-err">{errors.title}</span>
       )}
@@ -46,7 +58,14 @@ const AddProductForm = (props) => {
       <br />
 
       <span className="field-title">Price: </span>
-      <Field type="number" name="price" placeholder="Enter Price" />
+      <Field
+        onInput={() => {
+          isTransition();
+        }}
+        type="number"
+        name="price"
+        placeholder="Enter Price"
+      />
       {touched.price && errors.price && (
         <span className="form-err">{errors.price}</span>
       )}
@@ -55,6 +74,9 @@ const AddProductForm = (props) => {
 
       <span className="field-title">Description: </span>
       <Field
+        onInput={() => {
+          isTransition();
+        }}
         type="textarea"
         name="description"
         placeholder="Enter Description"
@@ -66,7 +88,14 @@ const AddProductForm = (props) => {
       <br />
 
       <span className="field-title">Brand: </span>
-      <Field type="text" name="manufacturer" placeholder="Enter Brand Name" />
+      <Field
+        onInput={() => {
+          isTransition();
+        }}
+        type="text"
+        name="manufacturer"
+        placeholder="Enter Brand Name"
+      />
       {touched.manufacturer && errors.manufacturer && (
         <span className="form-err">{errors.manufacturer}</span>
       )}
@@ -74,7 +103,14 @@ const AddProductForm = (props) => {
       <br />
 
       <span className="field-title">Quantity: </span>
-      <Field type="number" name="quantity" placeholder="Enter Quantity" />
+      <Field
+        onInput={() => {
+          isTransition();
+        }}
+        type="number"
+        name="quantity"
+        placeholder="Enter Quantity"
+      />
       {touched.quantity && errors.quantity && (
         <span className="form-err">{errors.quantity}</span>
       )}
@@ -82,7 +118,14 @@ const AddProductForm = (props) => {
       <br />
 
       <span className="field-title">Category: </span>
-      <Field type="text" name="category" placeholder="Enter Category" />
+      <Field
+        onInput={() => {
+          isTransition();
+        }}
+        type="text"
+        name="category"
+        placeholder="Enter Category"
+      />
       {touched.category && errors.category && (
         <span className="form-err">{errors.category}</span>
       )}
@@ -90,7 +133,14 @@ const AddProductForm = (props) => {
       <br />
 
       <span className="field-title">Image Link: </span>
-      <Field type="url" name="image" placeholder="Enter url" />
+      <Field
+        onInput={() => {
+          isTransition();
+        }}
+        type="url"
+        name="image"
+        placeholder="Enter url"
+      />
       {touched.image && errors.image && (
         <span className="form-err">{errors.image}</span>
       )}
