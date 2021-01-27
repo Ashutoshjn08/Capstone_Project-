@@ -236,6 +236,12 @@ button.sign-up-btn {
   align-items: center;
 }
 
+.hide-dot{
+  display: none;
+}
+
+/* /////////////////////////////Media//////////////////////////////////// */
+
 @media (max-width: 767px) {
   .bottom-buffer,
   .bar-div {

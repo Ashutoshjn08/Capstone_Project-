@@ -118,7 +118,7 @@ export default class Product extends Component {
               onClick={(event) => {
                 this.updateProduct(event.currentTarget.id);
               }}
-              style={{ marginLeft: "5px", textAlign: "center", width:"100px" }}
+              style={{ marginLeft: "5px", textAlign: "center", width:"auto" }}
               className="btn btn-primary"
             >
               <span>Update</span>

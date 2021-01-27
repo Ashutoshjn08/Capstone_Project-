@@ -21,13 +21,11 @@ import UpdageProductPage from "./components/UpdageProductPage";
 import SignInPage from "./components/SignInPage";
 import SignUpPage from "./components/SignUpPage";
 import Loading from "./components/Loading";
-// import TopProductPage from "./components/TopProductPage";
 const TopProductPage = lazy(() => import("./components/TopProductPage"));
 
 store.dispatch(getAllProducts());
 store.dispatch(getAllUsers());
 
-// show:"li-signin-up show-item-li", hide :"li-signin-up hide-item-li"
 function Links(props) {
   let hide = "li-signin-up hide-item-li";
   let d = new Date();

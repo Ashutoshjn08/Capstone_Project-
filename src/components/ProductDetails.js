@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 
-// let this.localStorageStr = JSON.parse(localStorage.getItem("products"));
-// let this.localStorageObj = {};
-
 export default class ProductDetails extends Component {
   constructor(props) {
     super(props);

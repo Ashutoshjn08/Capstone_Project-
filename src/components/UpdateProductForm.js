@@ -108,29 +108,18 @@ const UpdateProductForm = (props) => {
 };
 
 const formikForm = withFormik({
-  mapPropsToValues({ ttl, prc, desc, brand, qnty, cat, img }) {
+  mapPropsToValues({ prc, qnty, cat, img }) {
     return {
-      // title: ttl || "",
       price: prc || "",
-      // description: desc || "",
-      // manufacturer: brand || "",
       quantity: qnty || "",
       category: cat || "",
       image: img || "",
     };
   },
   validationSchema: Yup.object().shape({
-    // title: Yup.string().min(3, "At least 3 characters are required")
-    // .required("Title is required"),
     price: Yup.number()
       .positive("Enter Only Numbers")
       .required("Price is required"),
-    // description: Yup.string()
-    //   .min(20, "At least 20 characters are required")
-    //   .required("Description is required"),
-    // manufacturer: Yup.string()
-    //   .min(3, "At least 3 characters are required")
-    //   .required("Title is required"),
     quantity: Yup.number()
       .positive("Enter Only Numbers")
       .required("Quantity is required"),

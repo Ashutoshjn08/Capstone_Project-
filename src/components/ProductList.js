@@ -4,7 +4,7 @@ import Modal from "react-modal";
 import { FaRegWindowClose } from "react-icons/fa";
 // import {Modal, Button} from 'react-bootstrap';
 
-Modal.setAppElement("#root");
+// Modal.setAppElement("#root");
 
 const TitleList = (props) => {
   return (
