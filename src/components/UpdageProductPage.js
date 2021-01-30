@@ -12,17 +12,14 @@ class UpdateProductPage extends Component {
   };
 
   isTransition = () => {
-    this.setState({ transition: true },console.log(this.state.transition));
+    this.setState({ transition: true }, console.log(this.state.transition));
   };
 
   updateProduct = (product) => {
-    debugger;
-    
-    this.setState({ escapeTransition: true },()=>{
-      debugger;
-      let id = this.props.location.state.id;
-      this.props.actions.updateProduct(product, id);
-    });
+    let id = this.props.location.state.id;
+    this.props.actions.updateProduct(product, id);
+
+    this.setState({ escapeTransition: true });
   };
 
   render() {
@@ -37,7 +34,7 @@ class UpdateProductPage extends Component {
         {this.state.escapeTransition === true ? null : (
           <Prompt
             when={this.state.transition}
-            message="Are you sure you want kdj to leave?"
+            message="Are you sure you want to leave?"
           />
         )}
       </div>

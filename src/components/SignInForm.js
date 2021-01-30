@@ -28,9 +28,9 @@ function SignInForm(props) {
         </div>
         <div className="card-body">
           <Form>
-            <Field type="text" name="id" placeholder="Email ID" /><br/>
+            <Field type="text"  name="id" placeholder="Email ID" /><br/>
             {touched.id && errors.id && (
-              <span className="form-err-login">{errors.id}</span>
+              <span data-test='email' className="form-err-login">{errors.id}</span>
             )}
             <br />
 

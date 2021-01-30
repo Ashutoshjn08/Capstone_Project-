@@ -7,7 +7,6 @@ import SignInForm from './SignInForm';
 class SignInPage extends Component {
 
         render() {
-        console.log(this.props)
         return (
             <div className = "ui container div-signin">
                 <SignInForm {...this.props}/>

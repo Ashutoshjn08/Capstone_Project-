@@ -88,7 +88,7 @@ function BarChart(props) {
           <label
             style={{ padding: "0 18px", color: "white", fontSize: "25px" }}
           >
-            <span style={{ padding: "5px" }}>
+            <span data-test = "top-text" style={{ padding: "5px" }}>
               <b>Top</b>
             </span>
             <input
@@ -103,7 +103,7 @@ function BarChart(props) {
                   : setCustomView(5);
               }}
             />
-            <span style={{ padding: "5px" }}>
+            <span data-test = "viewed-text" style={{ padding: "5px" }}>
               <b>viewed products</b> (only 3 to 10)
             </span>
           </label>

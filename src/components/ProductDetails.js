@@ -49,8 +49,8 @@ export default class ProductDetails extends Component {
                 href="/products"
                 className="btn btn-primary"
                 style={{
-                  width: "200px",
-                  verticalAlign: "middle",
+                  width: "auto",
+                  margin: 0
                 }}
               >
                 View Other Products

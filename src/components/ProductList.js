@@ -10,43 +10,43 @@ const TitleList = (props) => {
   return (
     <div className="container">
       <div className="row bottom-buffer">
-        <div className="col-sm-4 ">
-          <span id="head-names" className="prod-items">
+        <div style ={{paddingLeft : '38px'}} className="col-sm-4 ">
+          <span id="head-names1" className="prod-items">
             <u>
               <b>Title</b>
             </u>
           </span>
         </div>
         <div className={props.priceSelect ? "col" : "hide-item-li"}>
-          <span id="head-names" className="prod-items">
+          <span id="head-names2" className="prod-items">
             <u>
               <b>Price</b>
             </u>
           </span>
         </div>
         <div className={props.quantitySelect ? "col " : "hide-item-li"}>
-          <span id="head-names" className="prod-items">
+          <span id="head-names3" className="prod-items">
             <u>
               <b>Quantity</b>
             </u>
           </span>
         </div>
         <div className={props.categorySelect ? "col " : "hide-item-li"}>
-          <span id="head-names" className="prod-items">
+          <span id="head-names4" className="prod-items">
             <u>
               <b>Category</b>
             </u>
           </span>
         </div>
         <div className={props.brandSelect ? "col " : "hide-item-li"}>
-          <span id="head-names" className="prod-items">
+          <span id="head-names5" className="prod-items">
             <u>
               <b>Brand</b>
             </u>
           </span>
         </div>
         <div className="col">
-          <span id="head-names" className="prod-items">
+          <span id="head-names6" className="prod-items">
             <u>
               <b>Update Product</b>
             </u>
@@ -252,7 +252,6 @@ export default class ProductList extends Component {
                   >
                     <div className="custum-fields">
                       <input
-                        
                         onChange={(e) => this.fieldSelectStatus(e)}
                         checked={this.state.priceSelect}
                         type="checkbox"
@@ -270,7 +269,6 @@ export default class ProductList extends Component {
                     </div>
                     <div className="custum-fields">
                       <input
-                        
                         onChange={(e) => this.fieldSelectStatus(e)}
                         checked={this.state.quantitySelect}
                         type="checkbox"
@@ -289,7 +287,6 @@ export default class ProductList extends Component {
 
                     <div className="custum-fields">
                       <input
-                        
                         onChange={(e) => this.fieldSelectStatus(e)}
                         checked={this.state.categorySelect}
                         type="checkbox"
@@ -308,7 +305,6 @@ export default class ProductList extends Component {
 
                     <div className="custum-fields">
                       <input
-                        
                         onChange={(e) => this.fieldSelectStatus(e)}
                         checked={this.state.brandSelect}
                         type="checkbox"
@@ -349,7 +345,7 @@ export default class ProductList extends Component {
         {/* *********Buttons***************** */}
         <div className="container">
           <div className="div-btn-add">
-            <div className= "div-customize">
+            <div className="div-customize">
               <a
                 onClick={() => this.setState({ isModalOpen: true })}
                 style={{ width: "auto" }}
@@ -358,7 +354,7 @@ export default class ProductList extends Component {
                 <span>Customize</span>
               </a>
             </div>
-            <div className = "div-add-delete-btn">
+            <div className="div-add-delete-btn">
               <a
                 onClick={this.checkLogin}
                 style={{ marginLeft: "5px" }}

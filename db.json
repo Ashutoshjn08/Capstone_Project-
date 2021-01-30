@@ -1,17 +1,6 @@
 {
   "products": [
     {
-      "id": 3,
-      "title": "Mens Cotton Jacket",
-      "price": 40000,
-      "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
-      "manufacturer": "Roaster",
-      "quantity": 1,
-      "category": "Daily Items",
-      "image": "https://homepages.cae.wisc.edu/~ece533/images/lena.png",
-      "view": 279
-    },
-    {
       "id": 4,
       "title": "Mens Casual Slim Fit",
       "price": 9700,
@@ -20,7 +9,7 @@
       "quantity": 34343,
       "category": "Foods",
       "image": "https://homepages.cae.wisc.edu/~ece533/images/lena.png",
-      "view": 969
+      "view": 971
     },
     {
       "id": 5,
@@ -31,7 +20,7 @@
       "quantity": 2,
       "category": "Jewelery",
       "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
-      "view": 655
+      "view": 656
     },
     {
       "id": 6,
@@ -53,7 +42,7 @@
       "quantity": 6,
       "category": "Jewelery",
       "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
-      "view": 500
+      "view": 501
     },
     {
       "id": 8,
@@ -64,7 +53,7 @@
       "quantity": 5,
       "category": "Jewelery",
       "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
-      "view": 343
+      "view": 344
     },
     {
       "id": 9,
@@ -75,7 +64,7 @@
       "quantity": 7,
       "category": "Electronics",
       "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
-      "view": 237
+      "view": 238
     },
     {
       "id": 10,
@@ -86,7 +75,7 @@
       "quantity": 3,
       "category": "Electronics",
       "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
-      "view": 543
+      "view": 544
     },
     {
       "id": 11,
@@ -119,7 +108,7 @@
       "quantity": 4,
       "category": "Electronics",
       "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
-      "view": 765
+      "view": 767
     },
     {
       "id": 14,
@@ -130,7 +119,7 @@
       "quantity": 3,
       "category": "Electronics",
       "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
-      "view": 654
+      "view": 655
     },
     {
       "id": 15,
@@ -152,7 +141,7 @@
       "quantity": 9,
       "category": "Women Clothing",
       "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
-      "view": 434
+      "view": 436
     },
     {
       "id": 17,
@@ -287,6 +276,22 @@
       "location": "blp",
       "mobile": "08095631766",
       "password": "123456"
+    },
+    {
+      "firstname": "Ashu",
+      "lastname": "Jain",
+      "id": "ashutoshjn008@gmail.com",
+      "location": "Begaluru",
+      "mobile": "08095631766",
+      "password": "000000"
+    },
+    {
+      "firstname": "Hari",
+      "lastname": "Sudan",
+      "id": "hari@sudan.com",
+      "location": "Blr",
+      "mobile": "15234567890",
+      "password": "000000"
     }
   ]
 }

@@ -108,7 +108,7 @@ div.img-shadow {
   font-weight: bold;
 }
 
-#head-names {
+.head-names {
   min-height: 40px;
   display: inline-flex;
   align-items: center;
