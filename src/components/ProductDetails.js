@@ -5,6 +5,8 @@ export default class ProductDetails extends Component {
     super(props);
     this.localStorageObj = this.props.location.state;
     this.localStorageStr  = JSON.parse(localStorage.getItem("products"));
+    
+    console.log("localStorage", this.localStorageObj)
   }
 
   render() {

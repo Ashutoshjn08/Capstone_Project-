@@ -1,15 +1,48 @@
 {
   "products": [
     {
+      "id": 1,
+      "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      "price": 1090,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "manufacturer": "Roaster",
+      "quantity": 9,
+      "category": "Men Clothing",
+      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+      "view": 345
+    },
+    {
+      "id": 2,
+      "title": "Mens Casual Premium Slim Fit T-Shirts ",
+      "price": 2200,
+      "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+      "manufacturer": "Roaster",
+      "quantity": 6,
+      "category": "Men Clothing",
+      "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+      "view": 765
+    },
+    {
+      "id": 3,
+      "title": "Mens Cotton Jacket",
+      "price": 5500,
+      "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
+      "manufacturer": "Roaster",
+      "quantity": 7,
+      "category": "Men Clothing",
+      "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+      "view": 268
+    },
+    {
       "id": 4,
       "title": "Mens Casual Slim Fit",
-      "price": 9700,
+      "price": 1500,
       "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
       "manufacturer": "Roaster",
-      "quantity": 34343,
-      "category": "Foods",
-      "image": "https://homepages.cae.wisc.edu/~ece533/images/lena.png",
-      "view": 971
+      "quantity": 3,
+      "category": "Men Clothing",
+      "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+      "view": 964
     },
     {
       "id": 5,
@@ -20,7 +53,7 @@
       "quantity": 2,
       "category": "Jewelery",
       "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
-      "view": 656
+      "view": 654
     },
     {
       "id": 6,
@@ -31,7 +64,7 @@
       "quantity": 9,
       "category": "Jewelery",
       "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
-      "view": 546
+      "view": 545
     },
     {
       "id": 7,
@@ -42,7 +75,7 @@
       "quantity": 6,
       "category": "Jewelery",
       "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
-      "view": 501
+      "view": 500
     },
     {
       "id": 8,
@@ -53,7 +86,7 @@
       "quantity": 5,
       "category": "Jewelery",
       "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
-      "view": 344
+      "view": 343
     },
     {
       "id": 9,
@@ -64,7 +97,7 @@
       "quantity": 7,
       "category": "Electronics",
       "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
-      "view": 238
+      "view": 237
     },
     {
       "id": 10,
@@ -75,7 +108,7 @@
       "quantity": 3,
       "category": "Electronics",
       "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
-      "view": 544
+      "view": 545
     },
     {
       "id": 11,
@@ -108,7 +141,7 @@
       "quantity": 4,
       "category": "Electronics",
       "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
-      "view": 767
+      "view": 765
     },
     {
       "id": 14,
@@ -119,7 +152,7 @@
       "quantity": 3,
       "category": "Electronics",
       "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
-      "view": 655
+      "view": 654
     },
     {
       "id": 15,
@@ -141,7 +174,7 @@
       "quantity": 9,
       "category": "Women Clothing",
       "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
-      "view": 436
+      "view": 434
     },
     {
       "id": 17,
@@ -270,28 +303,12 @@
       "password": "123456"
     },
     {
-      "firstname": "pari",
-      "lastname": "ashu",
-      "id": "pari@ashu.com",
-      "location": "blp",
-      "mobile": "08095631766",
-      "password": "123456"
-    },
-    {
       "firstname": "Ashu",
       "lastname": "Jain",
-      "id": "ashutoshjn008@gmail.com",
-      "location": "Begaluru",
+      "id": "ashu@wipro.com",
+      "location": "Bangalore",
       "mobile": "08095631766",
-      "password": "000000"
-    },
-    {
-      "firstname": "Hari",
-      "lastname": "Sudan",
-      "id": "hari@sudan.com",
-      "location": "Blr",
-      "mobile": "15234567890",
-      "password": "000000"
+      "password": "123456"
     }
   ]
 }
