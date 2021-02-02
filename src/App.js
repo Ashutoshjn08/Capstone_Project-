@@ -12,7 +12,7 @@ import {
   Route,
   Switch,
 } from "react-router-dom";
-import { FaSignOutAlt } from "react-icons/fa";
+import { FaSignOutAlt, FaBars } from "react-icons/fa";
 import "./css/app.css";
 import logo from "./logo.png";
 import ProductDetails from "./components/ProductDetails";
@@ -32,6 +32,7 @@ function Links(props) {
   const [liLogin, setLilogin] = useState(true);
   const [liLogout, setlilogout] = useState(true);
   const [int, setInt] = useState(d.getDate() + "" + d.getTime());
+  const [toggelBurger, setToggelBurger] = useState(true)
 
   const onChangeHandleSearch = (val) => {
     props.onChangeHandleProp(val);
@@ -53,6 +54,10 @@ function Links(props) {
     setInt(d.getDate() + "" + d.getTime());
   };
 
+  const toggle = () => {
+    setToggelBurger(!toggelBurger)
+  }
+
   return (
     <nav className="navbar navbar-expand-sm bg-dark navbar-dark nav-custom">
       <div className="main-nav">
@@ -67,18 +72,25 @@ function Links(props) {
                 ></img>
               </a>
             </span>
+            <span>
+              <div onClick = {toggle} className = "hamburger">
+                <a href="#">
+                  <FaBars />
+                </a>
+              </div>
+            </span>
           </div>
-          <div className="left-nav">
+          <div style= { toggelBurger ? null : {display:"block"}} className="left-nav">
             <ul className="navbar-nav">
-              <li className="right-align-home-product-nav nav-item">
+              <li className=" nav-item">
                 <NavLink exact to="/">
                   HOME
                 </NavLink>
               </li>
-              <li className="right-align-home-product-nav nav-item">
+              <li className=" nav-item">
                 <NavLink to="/products">PRODUCTS</NavLink>
               </li>
-              <li className="right-align-home-product-nav nav-item">
+              <li className=" nav-item">
                 <NavLink to="/topproducts">TOP PRODUCTS</NavLink>
               </li>
             </ul>
